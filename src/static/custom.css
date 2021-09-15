@@ -1,0 +1,47 @@
+.navbar-nav .nav-link {
+    color: rgba(0,0,0,1) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: green !important;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+#blogtitle {
+    font-size: 6rem;
+}
+
+@media (min-width: 992px) {
+    #hometext {
+        font-size: 4rem;
+    }
+    #blogdetailtitle {
+        font-size: 5rem;
+    }
+}
+
+a {
+    color: rgba(0,0,0,1) !important;
+    text-decoration: none !important;
+   }
+a:hover {
+    color: green !important;
+    text-decoration: none;
+   }
+
+.sticky {
+  position: sticky !important;
+  top: 0;
+  min-height: 2rem;
+}

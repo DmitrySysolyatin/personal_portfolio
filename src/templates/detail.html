@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Details{% endblock %}
+{% block content %}
+<h2 class="text-center">{{ blog.title }}</h2>
+    <div class="row justify-content-center my-2">
+    <h6 class="text-muted text-center">{{ blog.date|date:'--F d Y--' }}</h6>
+        </div>
+    <p>{{ blog.description|safe }}</p>
+    Для продолжения переходите по ссылке:
+    <a href="{{ blog.url }}">{{ blog.url }}</a>
+{% endblock %}
